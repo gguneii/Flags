@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountryApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="desktop-lists">
+                    <ul class="first-lists">
+                        <li><a href="">Europe</a></li>
+                        <li><a href="">Asia</a></li>
+                        <li><a href="">America</a></li>
+                    </ul>
+                    <a class="logo fs-25">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" to="/"
+                            class="text-[2.5rem] text-violet-500" height="1em" width="1em"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" stroke-miterlimit="10" stroke-width="32"
+                                d="M464 256c0-114.87-93.13-208-208-208S48 141.13 48 256s93.13 208 208 208 208-93.13 208-208z">
+                            </path>
+                            <path
+                                d="M445.57 172.14c-16.06.1-14.48 29.73-34.49 15.75-7.43-5.18-12-12.71-21.33-15-8.15-2-16.5.08-24.55 1.47-9.15 1.58-20 2.29-26.94 9.22-6.71 6.67-10.26 15.62-17.4 22.33-13.81 13-19.64 27.19-10.7 45.57 8.6 17.67 26.59 27.26 46 26 19.07-1.27 38.88-12.33 38.33 15.38-.2 9.8 1.85 16.6 4.86 25.71 2.79 8.4 2.6 16.54 3.24 25.21 1.18 16.2 4.16 34.36 12.2 48.67l15-21.16c1.85-2.62 5.72-6.29 6.64-9.38 1.63-5.47-1.58-14.87-1.95-21s-.19-12.34-1.13-18.47c-1.32-8.59-6.4-16.64-7.1-25.13-1.29-15.81 1.6-28.43-10.58-41.65-11.76-12.75-29-15.81-45.47-13.22-8.3 1.3-41.71 6.64-28.3-12.33 2.65-3.73 7.28-6.79 10.26-10.34 2.59-3.09 4.84-8.77 7.88-11.18s17-5.18 21-3.95 8.17 7 11.64 9.56a49.89 49.89 0 0021.81 9.36c13.66 2 42.22-5.94 42-23.46-.04-8.4-7.84-20.1-10.92-27.96zM287.45 316.3c-5.33-22.44-35.82-29.94-52.26-42.11-9.45-7-17.86-17.81-30.27-18.69-5.72-.41-10.51.83-16.18-.64-5.2-1.34-9.28-4.14-14.82-3.41-10.35 1.36-16.88 12.42-28 10.92-10.55-1.42-21.42-13.76-23.82-23.81-3.08-12.92 7.14-17.11 18.09-18.26 4.57-.48 9.7-1 14.09.67 5.78 2.15 8.51 7.81 13.7 10.67 9.73 5.33 11.7-3.19 10.21-11.83-2.23-12.94-4.83-18.22 6.71-27.12 8-6.14 14.84-10.58 13.56-21.61-.76-6.48-4.31-9.41-1-15.86 2.51-4.91 9.4-9.34 13.89-12.27 11.59-7.56 49.65-7 34.1-28.16-4.57-6.21-13-17.31-21-18.83-10-1.89-14.44 9.27-21.41 14.19-7.2 5.09-21.22 10.87-28.43 3-9.7-10.59 6.43-14.07 10-21.46s-8.27-21.36-14.61-24.9l-29.81 33.43a41.52 41.52 0 008.34 31.86c5.93 7.63 15.37 10.08 15.8 20.5.42 10-1.14 15.12-7.68 22.15-2.83 3-4.83 7.26-7.71 10.07-3.53 3.43-2.22 2.38-7.73 3.32-10.36 1.75-19.18 4.45-29.19 7.21C95.34 199.94 93.8 172.69 86.2 162l-25 20.19c-.27 3.31 4.1 9.4 5.29 13 6.83 20.57 20.61 36.48 29.51 56.16 9.37 20.84 34.53 15.06 45.64 33.32 9.86 16.2-.67 36.71 6.71 53.67 5.36 12.31 18 15 26.72 24 8.91 9.09 8.72 21.53 10.08 33.36a305.22 305.22 0 007.45 41.28c1.21 4.69 2.32 10.89 5.53 14.76 2.2 2.66 9.75 4.95 6.7 5.83 4.26.7 11.85 4.68 15.4 1.76 4.68-3.84 3.43-15.66 4.24-21 2.43-15.9 10.39-31.45 21.13-43.35 10.61-11.74 25.15-19.69 34.11-33 8.73-12.98 11.36-30.49 7.74-45.68zm-33.39 26.32c-6 10.71-19.36 17.88-27.95 26.39-2.33 2.31-7.29 10.31-10.21 8.58-2.09-1.24-2.8-11.62-3.57-14a61.17 61.17 0 00-21.71-29.95c-3.13-2.37-10.89-5.45-12.68-8.7-2-3.53-.2-11.86-.13-15.7.11-5.6-2.44-14.91-1.06-20 1.6-5.87-1.48-2.33 3.77-3.49 2.77-.62 14.21 1.39 17.66 2.11 5.48 1.14 8.5 4.55 12.82 8 11.36 9.11 23.87 16.16 36.6 23.14 9.86 5.46 12.76 12.37 6.46 23.62zm-69.6-275.53c4.74 4.63 9.2 10.11 16.27 10.57 6.69.45 13-3.17 18.84 1.38 6.48 5 11.15 11.33 19.75 12.89 8.32 1.51 17.13-3.35 19.19-11.86 2-8.11-2.31-16.93-2.57-25.07 0-1.13.61-6.15-.17-7-.58-.64-5.42.08-6.16.1q-8.13.24-16.22 1.12a207.1 207.1 0 00-57.18 14.65c2.43 1.68 5.48 2.35 8.25 3.22zm171.94 56.18c8.49 0 17.11-3.8 14.37-13.62-2.3-8.23-6.22-17.16-15.76-12.72-6.07 2.82-14.67 10-15.38 17.12-.81 8.08 11.11 9.22 16.77 9.22zm-6.78 42.97c8.67 5.19 21.53 2.75 28.07-4.66 5.11-5.8 8.12-15.87 17.31-15.86a15.4 15.4 0 0110.82 4.41c3.8 3.93 3.05 7.62 3.86 12.54 1.81 11.05 13.66.63 16.75-3.65 2-2.79 4.71-6.93 3.8-10.56-.84-3.39-4.8-7-6.56-10.11-5.14-9-9.37-19.47-17.07-26.74-7.41-7-16.52-6.19-23.55 1.08-5.76 6-12.45 10.75-16.39 18.05-2.78 5.13-5.91 7.58-11.54 8.91-3.1.73-6.64 1-9.24 3.08-7.24 5.7-3.12 19.39 3.74 23.51z">
+                            </path>
+                        </svg>
+                    </a>
+                    <ul class="first-lists">
+                        <li><a href="">Africa</a></li>
+                        <li><a href="">Oceania</a></li>
+                        <li><a href="">Antarctic</a></li>
+                    </ul>
+                </div>
+                <a onclick="dark()" class="light">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                        stroke-linejoin="round" class="text-[25px]" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                </a>
+                <div class="navbar">
+                    <a onclick="show()" class="menu w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6 dark:text-gray-100">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </a>
+                    <ul class="lists">
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">Americas</a></li>
+                        <li><a href="#">Africa</a></li>
+                        <li><a href="#">Oceania</a></li>
+                        <li><a href="#">Antarctic</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="title">
+                <h2> Welcome to CountryApp Website</h2>
+                <p>You can find data of any country in this website.</p>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+
+                <div class="buttons">
+                    <button>Have a Look</button>
+                    <button onclick="showInput()">Search</button>
+                </div>
+            </div>
+
+            <a id="card-random" href="#"> </a>
+            <div id="cards"> </div>
+            <button class="show-more" onclick="add2()">Show More...</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="privacy">
+            <a href="">By Guney</a>
+            <a href="">Privacy © 2023</a>
+        </div>
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script>
+        let region = ["Antarctic", "Americas", "Europe", "Africa", "Europe", "Asia", "Oceania", "Americas", "Oceania", "Africa", "Africa", "Europe", "Africa", "Asia", "Africa", "Americas", "Asia", "Americas", "Africa", "Europe", "Africa", "Africa", "Europe", "Africa", "Americas", "Africa", "Oceania", "Europe", "Asia", "Asia", "Americas", "Europe", "Oceania", "Europe", "Europe", "Asia", "Africa", "Africa", "Asia", "Asia", "Asia", "Americas", "Asia", "Asia", "Asia", "Americas", "Oceania", "Europe", "Africa", "Europe", "Africa", "Oceania", "Oceania", "Africa", "Asia", "Africa", "Africa", "Asia", "Africa", "Americas", "Americas", "Americas", "Europe", "Europe", "Africa", "Africa", "Antarctic", "Europe", "Africa", "Oceania", "Europe", "Asia", "Americas", "Asia", "Asia", "Europe", "Africa", "Asia", "Oceania", "Africa", "Americas", "Oceania", "Antarctic", "Asia", "Africa", "Asia", "Asia", "Europe", "Africa", "Americas", "Americas", "Europe", "Europe", "Africa", "Asia", "Europe", "Americas", "Europe", "Asia", "Asia", "Antarctic", "Europe", "Americas", "Asia", "Europe", "Asia", "Africa", "Europe", "Americas", "Africa", "Asia", "Europe", "Africa", "Europe", "Europe", "Asia", "Americas", "Asia", "Europe", "Africa", "Oceania", "Americas", "Europe", "Europe", "Americas", "Americas", "Oceania", "Oceania", "Africa", "Americas", "Americas", "Oceania", "Asia", "Americas", "Oceania", "Americas", "Africa", "Americas", "Oceania", "Europe", "Europe", "Oceania", "Americas", "Asia", "Europe", "Europe", "Africa", "Africa", "Asia", "Americas", "Africa", "Africa", "Europe", "Oceania", "Oceania", "Africa", "Africa", "Americas", "Africa", "Oceania", "Antarctic", "Africa", "Europe", "Europe", "Americas", "Americas", "Asia", "Asia", "Americas", "Europe", "Asia", "Europe", "Americas", "Asia", "Africa", "Americas", "Oceania", "Europe", "Americas", "Americas", "Europe", "Europe", "Africa", "Africa", "Africa", "Africa", "Asia", "Asia", "Africa", "Europe", "Americas", "Europe", "Africa", "Asia", "Europe", "Africa", "Americas", "Asia", "Oceania", "Europe", "Asia", "Americas", "Americas", "Americas", "Americas", "Americas", "Africa", "Africa", "Americas", "Americas", "Americas", "Asia", "Europe", "Africa", "Africa", "Americas", "Europe", "Asia", "Asia", "Africa", "Asia", "Europe", "Americas", "Europe", "Americas", "Asia", "Asia", "Americas", "Africa", "Americas", "Europe", "Americas", "Asia", "Africa", "Oceania", "Oceania", "Oceania", "Africa", "Africa", "Africa", "Americas", "Asia", "Europe", "Oceania", "Africa", "Europe", "Asia", "Oceania", "Americas", "Americas"]
+        let name = ["South Georgia", "Grenada", "Switzerland", "Sierra Leone", "Hungary", "Taiwan", "Wallis and Futuna", "Barbados", "Pitcairn Islands", "Ivory Coast", "Tunisia", "Italy", "Benin", "Indonesia", "Cape Verde", "Saint Kitts and Nevis", "Laos", "Caribbean Netherlands", "Uganda", "Andorra", "Burundi", "South Africa", "France", "Libya", "Mexico", "Gabon", "Northern Mariana Islands", "North Macedonia", "China", "Yemen", "Saint Barthélemy", "Guernsey", "Solomon Islands", "Svalbard and Jan Mayen", "Faroe Islands", "Uzbekistan", "Egypt", "Senegal", "Sri Lanka", "Palestine", "Bangladesh", "Peru", "Singapore", "Turkey", "Afghanistan", "Aruba", "Cook Islands", "United Kingdom", "Zambia", "Finland", "Niger", "Christmas Island", "Tokelau", "Guinea-Bissau", "Azerbaijan", "Réunion", "Djibouti", "North Korea", "Mauritius", "Montserrat", "United States Virgin Islands", "Colombia", "Greece", "Croatia", "Morocco", "Algeria", "Antarctica", "Netherlands", "Sudan", "Fiji", "Liechtenstein", "Nepal", "Puerto Rico", "Georgia", "Pakistan", "Monaco", "Botswana", "Lebanon", "Papua New Guinea", "Mayotte", "Dominican Republic", "Norfolk Island", "Bouvet Island", "Qatar", "Madagascar", "India", "Syria", "Montenegro", "Eswatini", "Paraguay", "El Salvador", "Ukraine", "Isle of Man", "Namibia", "United Arab Emirates", "Bulgaria", "Greenland", "Germany", "Cambodia", "Iraq", "French Southern and Antarctic Lands", "Sweden", "Cuba", "Kyrgyzstan", "Russia", "Malaysia", "São Tomé and Príncipe", "Cyprus", "Canada", "Malawi", "Saudi Arabia", "Bosnia and Herzegovina", "Ethiopia", "Spain", "Slovenia", "Oman", "Saint Pierre and Miquelon", "Macau", "San Marino", "Lesotho", "Marshall Islands", "Sint Maarten", "Iceland", "Luxembourg", "Argentina", "Turks and Caicos Islands", "Nauru", "Cocos (Keeling) Islands", "Western Sahara", "Dominica", "Costa Rica", "Australia", "Thailand", "Haiti", "Tuvalu", "Honduras", "Equatorial Guinea", "Saint Lucia", "French Polynesia", "Belarus", "Latvia", "Palau", "Guadeloupe", "Philippines", "Gibraltar", "Denmark", "Cameroon", "Guinea", "Bahrain", "Suriname", "DR Congo", "Somalia", "Czechia", "New Caledonia", "Vanuatu", "Saint Helena, Ascension and Tristan da Cunha", "Togo", "British Virgin Islands", "Kenya", "Niue", "Heard Island and McDonald Islands", "Rwanda", "Estonia", "Romania", "Trinidad and Tobago", "Guyana", "Timor-Leste", "Vietnam", "Uruguay", "Vatican City", "Hong Kong", "Austria", "Antigua and Barbuda", "Turkmenistan", "Mozambique", "Panama", "Micronesia", "Ireland", "Curaçao", "French Guiana", "Norway", "Åland Islands", "Central African Republic", "Burkina Faso", "Eritrea", "Tanzania", "South Korea", "Jordan", "Mauritania", "Lithuania", "United States Minor Outlying Islands", "Slovakia", "Angola", "Kazakhstan", "Moldova", "Mali", "Falkland Islands", "Armenia", "Samoa", "Jersey", "Japan", "Bolivia", "Chile", "United States", "Saint Vincent and the Grenadines", "Bermuda", "Seychelles", "British Indian Ocean Territory", "Guatemala", "Ecuador", "Martinique", "Tajikistan", "Malta", "Gambia", "Nigeria", "Bahamas", "Kosovo", "Kuwait", "Maldives", "South Sudan", "Iran", "Albania", "Brazil", "Serbia", "Belize", "Myanmar", "Bhutan", "Venezuela", "Liberia", "Jamaica", "Poland", "Cayman Islands", "Brunei", "Comoros", "Guam", "Tonga", "Kiribati", "Ghana", "Chad", "Zimbabwe", "Saint Martin", "Mongolia", "Portugal", "American Samoa", "Republic of the Congo", "Belgium", "Israel", "New Zealand", "Nicaragua", "Anguilla"]
+        let capital = ["King Edward Point", "St. George's", "Bern", "Freetown", "Budapest", "Taipei", "Mata-Utu", "Bridgetown", "Adamstown", "Yamoussoukro", "Tunis", "Rome", "Porto-Novo", "Jakarta", "Praia", "Basseterre", "Vientiane", "Kralendijk", "Kampala", "Andorra la Vella", "Gitega", "Pretoria", "Paris", "Tripoli", "Mexico City", "Libreville", "Saipan", "Skopje", "Beijing", "Sana'a", "Gustavia", "St. Peter Port", "Honiara", "Longyearbyen", "Tórshavn", "Tashkent", "Cairo", "Dakar", "Sri Jayawardenepura Kotte", "Ramallah", "Dhaka", "Lima", "Singapore", "Ankara", "Kabul", "Oranjestad", "Avarua", "London", "Lusaka", "Helsinki", "Niamey", "Flying Fish Cove", "Fakaofo", "Bissau", "Baku", "Saint-Denis", "Djibouti", "Pyongyang", "Port Louis", "Plymouth", "Charlotte Amalie", "Bogotá", "Athens", "Zagreb", "Rabat", "Algiers", "yoxdur", "Amsterdam", "Khartoum", "Suva", "Vaduz", "Kathmandu", "San Juan", "Tbilisi", "Islamabad", "Monaco", "Gaborone", "Beirut", "Port Moresby", "Mamoudzou", "Santo Domingo", "Kingston", "yoxdur", "Doha", "Antananarivo", "New Delhi", "Damascus", "Podgorica", "Mbabane", "Asunción", "San Salvador", "Kyiv", "Douglas", "Windhoek", "Abu Dhabi", "Sofia", "Nuuk", "Berlin", "Phnom Penh", "Baghdad", "Port-aux-Français", "Stockholm", "Havana", "Bishkek", "Moscow", "Kuala Lumpur", "São Tomé", "Nicosia", "Ottawa", "Lilongwe", "Riyadh", "Sarajevo", "Addis Ababa", "Madrid", "Ljubljana", "Muscat", "Saint-Pierre", "yoxdur", "City of San Marino", "Maseru", "Majuro", "Philipsburg", "Reykjavik", "Luxembourg", "Buenos Aires", "Cockburn Town", "Yaren", "West Island", "El Aaiún", "Roseau", "San José", "Canberra", "Bangkok", "Port-au-Prince", "Funafuti", "Tegucigalpa", "Malabo", "Castries", "Papeetē", "Minsk", "Riga", "Ngerulmud", "Basse-Terre", "Manila", "Gibraltar", "Copenhagen", "Yaoundé", "Conakry", "Manama", "Paramaribo", "Kinshasa", "Mogadishu", "Prague", "Nouméa", "Port Vila", "Jamestown", "Lomé", "Road Town", "Nairobi", "Alofi", "yoxdur", "Kigali", "Tallinn", "Bucharest", "Port of Spain", "Georgetown", "Dili", "Hanoi", "Montevideo", "Vatican City", "City of Victoria", "Vienna", "Saint John's", "Ashgabat", "Maputo", "Panama City", "Palikir", "Dublin", "Willemstad", "Cayenne", "Oslo", "Mariehamn", "Bangui", "Ouagadougou", "Asmara", "Dodoma", "Seoul", "Amman", "Nouakchott", "Vilnius", "Washington DC", "Bratislava", "Luanda", "Nur-Sultan", "Chișinău", "Bamako", "Stanley", "Yerevan", "Apia", "Saint Helier", "Tokyo", "Sucre", "Santiago", "Washington, D.C.", "Kingstown", "Hamilton", "Victoria", "Diego Garcia", "Guatemala City", "Quito", "Fort-de-France", "Dushanbe", "Valletta", "Banjul", "Abuja", "Nassau", "Pristina", "Kuwait City", "Malé", "Juba", "Tehran", "Tirana", "Brasília", "Belgrade", "Belmopan", "Naypyidaw", "Thimphu", "Caracas", "Monrovia", "Kingston", "Warsaw", "George Town", "Bandar Seri Begawan", "Moroni", "Hagåtña", "Nuku'alofa", "South Tarawa", "Accra", "N'Djamena", "Harare", "Marigot", "Ulan Bator", "Lisbon", "Pago Pago", "Brazzaville", "Brussels", "Jerusalem", "Wellington", "Managua", "The Valley"]
+        let population = [30, 112519, 8654622, 7976985, 9749763, 23503349, 11750, 287371, 56, 26378275, 11818618, 59554023, 12123198, 273523621, 555988, 53192, 7275556, 25987, 45741000, 77265, 11890781, 59308690, 67391582, 6871287, 128932753, 2225728, 57557, 2077132, 1402112000, 29825968, 4255, 62999, 686878, 2562, 48865, 34232050, 102334403, 16743930, 21919000, 4803269, 164689383, 32971846, 5685807, 84339067, 40218234, 106766, 18100, 67215293, 18383956, 5530719, 24206636, 2072, 1411, 1967998, 10110116, 840974, 988002, 25778815, 1265740, 4922, 106290, 50882884, 10715549, 4047200, 36910558, 44700000, 1000, 16655799, 43849269, 896444, 38137, 29136808, 3194034, 3714000, 220892331, 39244, 2351625, 6825442, 8947027, 226915, 10847904, 2302, 0, 2881060, 27691019, 1380004385, 17500657, 621718, 1160164, 7132530, 6486201, 44134693, 85032, 2540916, 9890400, 6927288, 56367, 83240525, 16718971, 40222503, 400, 10353442, 11326616, 6591600, 144104080, 32365998, 219161, 1207361, 38005238, 19129955, 34813867, 3280815, 114963583, 47351567, 2100126, 5106622, 6069, 649342, 33938, 2142252, 59194, 40812, 366425, 632275, 45376763, 38718, 10834, 544, 510713, 71991, 5094114, 25687041, 69799978, 11402533, 11792, 9904608, 1402985, 183629, 280904, 9398861, 1901548, 18092, 400132, 109581085, 33691, 5831404, 26545864, 13132792, 1701583, 586634, 108407721, 15893219, 10698896, 271960, 307150, 53192, 8278737, 30237, 53771300, 1470, 0, 12952209, 1331057, 19286123, 1399491, 786559, 1318442, 97338583, 3473727, 451, 7500700, 8917205, 97928, 6031187, 31255435, 4314768, 115021, 4994724, 155014, 254541, 5379475, 29458, 4829764, 20903278, 5352000, 59734213, 51780579, 10203140, 4649660, 2794700, 300, 5458827, 32866268, 18754440, 2617820, 20250834, 2563, 2963234, 198410, 100800, 125836021, 11673029, 19116209, 329484123, 110947, 63903, 98462, 3000, 16858333, 17643060, 378243, 9537642, 525285, 2416664, 206139587, 393248, 1775378, 4270563, 540542, 11193729, 83992953, 2837743, 212559409, 6908224, 397621, 54409794, 771612, 28435943, 5057677, 2961161, 37950802, 65720, 437483, 869595, 168783, 105697, 119446, 31072945, 16425859, 14862927, 38659, 3278292, 10305564, 55197, 5657000, 11555997, 9216900, 5084300, 6624554, 13452]
+        let area = [3903, 344, 41284, 71740, 93028, 36193, 142, 430, 47, 322463, 163610, 301336, 112622, 1904569, 4033, 261, 236800, 328, 241550, 468, 27834, 1221037, 551695, 1759540, 1964375, 267668, 464, 25713, 9706961, 527968, 21, 78, 28896, 61399, 1393, 447400, 1002450, 196722, 65610, 6220, 147570, 1285216, 710, 783562, 652230, 180, 236, 242900, 752612, 338424, 1267000, 135, 12, 36125, 86600, 2511, 23200, 120538, 2040, 102, 347, 1141748, 131990, 56594, 446550, 2381741, 14000000, 41850, 1886068, 18272, 160, 147181, 8870, 69700, 881912, 2.02, 582000, 10452, 462840, 374, 48671, 36, 49, 11586, 587041, 3287590, 185180, 13812, 17364, 406752, 21041, 603500, 572, 825615, 83600, 110879, 2166086, 357114, 181035, 438317, 7747, 450295, 109884, 199951, 17098242, 330803, 964, 9251, 9984670, 118484, 2149690, 51209, 1104300, 505992, 20273, 309500, 242, 30, 61, 30355, 181, 34, 103000, 2586, 2780400, 948, 21, 14, 266000, 751, 51100, 7692024, 513120, 27750, 26, 112492, 28051, 616, 4167, 207600, 64559, 459, 1628, 342353, 6, 43094, 475442, 245857, 765, 163820, 2344858, 637657, 78865, 18575, 12189, 394, 56785, 151, 580367, 260, 412, 26338, 45227, 238391, 5130, 214969, 14874, 331212, 181034, 0.44, 1104, 83871, 442, 488100, 801590, 75417, 702, 70273, 444, 83534, 323802, 1580, 622984, 272967, 117600, 945087, 100210, 89342, 1030700, 65300, 34.2, 49037, 1246700, 2724900, 33846, 1240192, 12173, 29743, 2842, 116, 377930, 1098581, 756102, 9372610, 389, 54, 452, 60, 108889, 276841, 1128, 143100, 316, 10689, 923768, 13943, 10908, 17818, 300, 619745, 1648195, 28748, 8515767, 88361, 22966, 676578, 38394, 916445, 111369, 10991, 312679, 264, 5765, 1862, 549, 747, 811, 238533, 1284000, 390757, 53, 1564110, 92090, 199, 342000, 30528, 20770, 270467, 130373, 91]
+        let img = ["https://flagcdn.com/gs.svg", "https://flagcdn.com/gd.svg", "https://flagcdn.com/ch.svg", "https://flagcdn.com/sl.svg", "https://flagcdn.com/hu.svg", "https://flagcdn.com/tw.svg", "https://flagcdn.com/wf.svg", "https://flagcdn.com/bb.svg", "https://flagcdn.com/pn.svg", "https://flagcdn.com/ci.svg", "https://flagcdn.com/tn.svg", "https://flagcdn.com/it.svg", "https://flagcdn.com/bj.svg", "https://flagcdn.com/id.svg", "https://flagcdn.com/cv.svg", "https://flagcdn.com/kn.svg", "https://flagcdn.com/la.svg", "https://flagcdn.com/bq.svg", "https://flagcdn.com/ug.svg", "https://flagcdn.com/ad.svg", "https://flagcdn.com/bi.svg", "https://flagcdn.com/za.svg", "https://flagcdn.com/fr.svg", "https://flagcdn.com/ly.svg", "https://flagcdn.com/mx.svg", "https://flagcdn.com/ga.svg", "https://flagcdn.com/mp.svg", "https://flagcdn.com/mk.svg", "https://flagcdn.com/cn.svg", "https://flagcdn.com/ye.svg", "https://flagcdn.com/bl.svg", "https://flagcdn.com/gg.svg", "https://flagcdn.com/sb.svg", "https://flagcdn.com/sj.svg", "https://flagcdn.com/fo.svg", "https://flagcdn.com/uz.svg", "https://flagcdn.com/eg.svg", "https://flagcdn.com/sn.svg", "https://flagcdn.com/lk.svg", "https://flagcdn.com/ps.svg", "https://flagcdn.com/bd.svg", "https://flagcdn.com/pe.svg", "https://flagcdn.com/sg.svg", "https://flagcdn.com/tr.svg", "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg", "https://flagcdn.com/aw.svg", "https://flagcdn.com/ck.svg", "https://flagcdn.com/gb.svg", "https://flagcdn.com/zm.svg", "https://flagcdn.com/fi.svg", "https://flagcdn.com/ne.svg", "https://flagcdn.com/cx.svg", "https://flagcdn.com/tk.svg", "https://flagcdn.com/gw.svg", "https://flagcdn.com/az.svg", "https://flagcdn.com/re.svg", "https://flagcdn.com/dj.svg", "https://flagcdn.com/kp.svg", "https://flagcdn.com/mu.svg", "https://flagcdn.com/ms.svg", "https://flagcdn.com/vi.svg", "https://flagcdn.com/co.svg", "https://flagcdn.com/gr.svg", "https://flagcdn.com/hr.svg", "https://flagcdn.com/ma.svg", "https://flagcdn.com/dz.svg", "https://flagcdn.com/aq.svg", "https://flagcdn.com/nl.svg", "https://flagcdn.com/sd.svg", "https://flagcdn.com/fj.svg", "https://flagcdn.com/li.svg", "https://flagcdn.com/np.svg", "https://flagcdn.com/pr.svg", "https://flagcdn.com/ge.svg", "https://flagcdn.com/pk.svg", "https://flagcdn.com/mc.svg", "https://flagcdn.com/bw.svg", "https://flagcdn.com/lb.svg", "https://flagcdn.com/pg.svg", "https://flagcdn.com/yt.svg", "https://flagcdn.com/do.svg", "https://flagcdn.com/nf.svg", "https://flagcdn.com/bv.svg", "https://flagcdn.com/qa.svg", "https://flagcdn.com/mg.svg", "https://flagcdn.com/in.svg", "https://flagcdn.com/sy.svg", "https://flagcdn.com/me.svg", "https://flagcdn.com/sz.svg", "https://flagcdn.com/py.svg", "https://flagcdn.com/sv.svg", "https://flagcdn.com/ua.svg", "https://flagcdn.com/im.svg", "https://flagcdn.com/na.svg", "https://flagcdn.com/ae.svg", "https://flagcdn.com/bg.svg", "https://flagcdn.com/gl.svg", "https://flagcdn.com/de.svg", "https://flagcdn.com/kh.svg", "https://flagcdn.com/iq.svg", "https://flagcdn.com/tf.svg", "https://flagcdn.com/se.svg", "https://flagcdn.com/cu.svg", "https://flagcdn.com/kg.svg", "https://flagcdn.com/ru.svg", "https://flagcdn.com/my.svg", "https://flagcdn.com/st.svg", "https://flagcdn.com/cy.svg", "https://flagcdn.com/ca.svg", "https://flagcdn.com/mw.svg", "https://flagcdn.com/sa.svg", "https://flagcdn.com/ba.svg", "https://flagcdn.com/et.svg", "https://flagcdn.com/es.svg", "https://flagcdn.com/si.svg", "https://flagcdn.com/om.svg", "https://flagcdn.com/pm.svg", "https://flagcdn.com/mo.svg", "https://flagcdn.com/sm.svg", "https://flagcdn.com/ls.svg", "https://flagcdn.com/mh.svg", "https://flagcdn.com/sx.svg", "https://flagcdn.com/is.svg", "https://flagcdn.com/lu.svg", "https://flagcdn.com/ar.svg", "https://flagcdn.com/tc.svg", "https://flagcdn.com/nr.svg", "https://flagcdn.com/cc.svg", "https://flagcdn.com/eh.svg", "https://flagcdn.com/dm.svg", "https://flagcdn.com/cr.svg", "https://flagcdn.com/au.svg", "https://flagcdn.com/th.svg", "https://flagcdn.com/ht.svg", "https://flagcdn.com/tv.svg", "https://flagcdn.com/hn.svg", "https://flagcdn.com/gq.svg", "https://flagcdn.com/lc.svg", "https://flagcdn.com/pf.svg", "https://flagcdn.com/by.svg", "https://flagcdn.com/lv.svg", "https://flagcdn.com/pw.svg", "https://flagcdn.com/gp.svg", "https://flagcdn.com/ph.svg", "https://flagcdn.com/gi.svg", "https://flagcdn.com/dk.svg", "https://flagcdn.com/cm.svg", "https://flagcdn.com/gn.svg", "https://flagcdn.com/bh.svg", "https://flagcdn.com/sr.svg", "https://flagcdn.com/cd.svg", "https://flagcdn.com/so.svg", "https://flagcdn.com/cz.svg", "https://flagcdn.com/nc.svg", "https://flagcdn.com/vu.svg", "https://flagcdn.com/sh.svg", "https://flagcdn.com/tg.svg", "https://flagcdn.com/vg.svg", "https://flagcdn.com/ke.svg", "https://flagcdn.com/nu.svg", "https://flagcdn.com/hm.svg", "https://flagcdn.com/rw.svg", "https://flagcdn.com/ee.svg", "https://flagcdn.com/ro.svg", "https://flagcdn.com/tt.svg", "https://flagcdn.com/gy.svg", "https://flagcdn.com/tl.svg", "https://flagcdn.com/vn.svg", "https://flagcdn.com/uy.svg", "https://flagcdn.com/va.svg", "https://flagcdn.com/hk.svg", "https://flagcdn.com/at.svg", "https://flagcdn.com/ag.svg", "https://flagcdn.com/tm.svg", "https://flagcdn.com/mz.svg", "https://flagcdn.com/pa.svg", "https://flagcdn.com/fm.svg", "https://flagcdn.com/ie.svg", "https://flagcdn.com/cw.svg", "https://flagcdn.com/gf.svg", "https://flagcdn.com/no.svg", "https://flagcdn.com/ax.svg", "https://flagcdn.com/cf.svg", "https://flagcdn.com/bf.svg", "https://flagcdn.com/er.svg", "https://flagcdn.com/tz.svg", "https://flagcdn.com/kr.svg", "https://flagcdn.com/jo.svg", "https://flagcdn.com/mr.svg", "https://flagcdn.com/lt.svg", "https://flagcdn.com/um.svg", "https://flagcdn.com/sk.svg", "https://flagcdn.com/ao.svg", "https://flagcdn.com/kz.svg", "https://flagcdn.com/md.svg", "https://flagcdn.com/ml.svg", "https://flagcdn.com/fk.svg", "https://flagcdn.com/am.svg", "https://flagcdn.com/ws.svg", "https://flagcdn.com/je.svg", "https://flagcdn.com/jp.svg", "https://flagcdn.com/bo.svg", "https://flagcdn.com/cl.svg", "https://flagcdn.com/us.svg", "https://flagcdn.com/vc.svg", "https://flagcdn.com/bm.svg", "https://flagcdn.com/sc.svg", "https://flagcdn.com/io.svg", "https://flagcdn.com/gt.svg", "https://flagcdn.com/ec.svg", "https://flagcdn.com/mq.svg", "https://flagcdn.com/tj.svg", "https://flagcdn.com/mt.svg", "https://flagcdn.com/gm.svg", "https://flagcdn.com/ng.svg", "https://flagcdn.com/bs.svg", "https://flagcdn.com/xk.svg", "https://flagcdn.com/kw.svg", "https://flagcdn.com/mv.svg", "https://flagcdn.com/ss.svg", "https://flagcdn.com/ir.svg", "https://flagcdn.com/al.svg", "https://flagcdn.com/br.svg", "https://flagcdn.com/rs.svg", "https://flagcdn.com/bz.svg", "https://flagcdn.com/mm.svg", "https://flagcdn.com/bt.svg", "https://flagcdn.com/ve.svg", "https://flagcdn.com/lr.svg", "https://flagcdn.com/jm.svg", "https://flagcdn.com/pl.svg", "https://flagcdn.com/ky.svg", "https://flagcdn.com/bn.svg", "https://flagcdn.com/km.svg", "https://flagcdn.com/gu.svg", "https://flagcdn.com/to.svg", "https://flagcdn.com/ki.svg", "https://flagcdn.com/gh.svg", "https://flagcdn.com/td.svg", "https://flagcdn.com/zw.svg", "https://flagcdn.com/mf.svg", "https://flagcdn.com/mn.svg", "https://flagcdn.com/pt.svg", "https://flagcdn.com/as.svg", "https://flagcdn.com/cg.svg", "https://flagcdn.com/be.svg", "https://flagcdn.com/il.svg", "https://flagcdn.com/nz.svg", "https://flagcdn.com/ni.svg", "https://flagcdn.com/ai.svg"]
+        let arr = [region, name, capital, population, area, img]
+        const search = document.querySelector(".search")
+        const header = document.querySelector('header')
+        let card = document.getElementById('card-random')
+        let cards = document.getElementById('cards')
+
+        function show() {
+            header.classList.toggle("active");
+        }
+        function showInput() {
+            search.classList.toggle('block')
+        }
+
+        function add() {
+            let kod = ''
+            let i = Math.floor(Math.random() * region.length);
+            kod +=
+                `
+                <img src="${img[i]}" alt="flag">
+               <div class="texts">
+              <h1>${name[i]}</h1>
+              <p>${region[i]}</p>
+                <h4>Capital: ${capital[i]}</h4>
+                <h4>Area: ${area[i]} km<sup>2</sup></h4>
+                <h4>Population: ${population[i]}</h4>
+               </div>
+            `
+
+            card.innerHTML = kod
+
+        }
+        add()
+
+        let current = 0
+        const load = 21
+
+        function add2() {
+            let kod2 = ''
+            let end = current + load;
+            for (let i = current; i < end && i < arr[0].length; i++) {
+                kod2 += `
+                 <article class="card-item">
+               <div class="flag"><img src="${arr[5][i]}" alt="flag"></div>            
+               <div class="item-texts">
+                        <p>${arr[0][i]}</p>
+                        <h3>${arr[1][i]}, ${arr[2][i]}</h3>
+                        <div class="end-texts">
+                            <span>Population: ${arr[3][i]}</span>
+                            <span>${arr[4][i]} km<sup>2</sup></span>
+                        </div>
+                    </div>
+                </article>
+                `
+            }
+            cards.innerHTML += kod2
+            current += load
+
+        }
+        add2()
+
+
+
+    </script> -->
+</body>
+
+</html>
