@@ -340,6 +340,9 @@ footer .icons i {
         sans-serif;
     }
   }
+  .first-lists li:hover a{
+    border-bottom-color: var(--benovse);
+  }
   .title {
     display: flex;
     flex-direction: column;
