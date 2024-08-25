@@ -2396,7 +2396,7 @@ function showCountry(id) {
 const back = document.getElementById('back')
 function backCards(){
     cardRandom.innerHTML =''
-    title.style.display = 'block'
+    title.style.display = 'flex'
     title.style.padding = '50px'
     btn.style.display = 'inline-block'
     back.style.display='none'
