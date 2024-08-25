@@ -1,11 +1,5 @@
-const cardRandom = document.getElementById('card-random')
-const cards = document.getElementById('cards')
-const search = document.querySelector(".search")
-const light = document.querySelector(".light")
-const body = document.querySelector("body")
-const header = document.querySelector('header')
-
-let usaqlar = [{
+// AOS.init();
+let data = [{
         "area": 3903,
         "id": "SGS",
         "capital": "King Edward Point",
@@ -2256,38 +2250,35 @@ let usaqlar = [{
         "population": 13452
     }
 ]
-function dark(){
+
+const cardRandom = document.getElementById('card-random')
+const cards = document.getElementById('cards')
+const searchAll = document.querySelector(".search-all")
+const light = document.querySelector(".light > svg")
+const ay = document.querySelector(".light > #ay")
+const body = document.querySelector("body")
+const header = document.querySelector('header')
+const btn = document.querySelector('.show-more')
+const search = document.getElementById('search')
+
+
+function dark() {
     document.body.classList.toggle('dark-mode')
-    if(body.classList.contains('dark-mode')){
-        light.innerHTML = `<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="text-[25px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>`
-    }
-    else{
-        light.innerHTML = `<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-        stroke-linejoin="round" class="text-[25px]" height="1em" width="1em"
-        xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="4"></circle>
-        <path d="M12 2v2"></path>
-        <path d="M12 20v2"></path>
-        <path d="m4.93 4.93 1.41 1.41"></path>
-        <path d="m17.66 17.66 1.41 1.41"></path>
-        <path d="M2 12h2"></path>
-        <path d="M20 12h2"></path>
-        <path d="m6.34 17.66-1.41 1.41"></path>
-        <path d="m19.07 4.93-1.41 1.41"></path>
-    </svg> `
-    }
+    light.classList.toggle("hidden")
+    ay.classList.toggle("hidden")
 }
 
 function show() {
     header.classList.toggle("active");
 }
+
 function showInput() {
-    search.classList.toggle('block')
+    searchAll.classList.toggle('block')
 }
 
-function add() {
-    let index = Math.floor(Math.random() * usaqlar.length)
-    let item = usaqlar[index]
+function addRandom() {
+    let index = Math.floor(Math.random() * data.length)
+    let item = data[index]
     cardRandom.innerHTML +=
         `
         <img src="${item.flag}" alt="flag">
@@ -2301,31 +2292,115 @@ function add() {
 
     `
 }
-add()
+addRandom()
 
-let start = 0
-let load = 10
-function add2() {
-    let end = start + load
-    for (let i = start; i < end && i < usaqlar.length; i++) {
-        let elem = usaqlar[i]
-        // console.log(elem);
-        cards.innerHTML +=
-            `
-              <article class="card-item">
-                       <div class="flag"><img src="${elem.flag}" alt="flag"></div>            
-                       <div class="item-texts">
-                                <p>${elem.region}</p>
-                                <h3>${elem.name}, ${elem.capital}</h3>
-                                <div class="end-texts">
-                                    <span>Population: ${elem.population}</span>
-                                    <span>${elem.area} km<sup>2</sup></span>
+function scrollByRandomCard() {
+    window.scrollTo({
+        top: 585,
+        behavior: 'smooth',
+    })
+}
+
+
+let load = 20
+
+function getFullCards(region) {
+    let arr = []
+    if (region == "") arr = data.slice(0, load)
+    else arr = data
+    cards.innerHTML = ""
+    arr.map((item) => {
+        if (item.region.includes(region)) {
+            cards.innerHTML +=
+                `<article onclick ="showCountry('${item.id}')" data-aos="fade-up" class="card-item">
+                    <div class="flag"><img src="${item.flag}" alt="flag"></div>            
+                    <div class="item-texts">
+                        <p>${item.region}</p>
+                        <h3>${item.name}, ${item.capital}</h3>
+                            <div class="end-texts">
+                                <span>Population: ${item.population}</span>
+                                <span>${item.area} km<sup>2</sup></span>
                                 </div>
-                            </div>
-                </article>
-            `
-    }
-    start +=load
+                                </div>
+                </article>`
+        }
+    });
 
 }
-add2()
+getFullCards("")
+
+function showMore() {
+    if (load < data.length) {
+        load += 20;
+        getFullCards("")
+    } else {
+        btn.disabled = true
+        btn.innerHTML = "No more cards"
+    }
+}
+
+function searchFunk() {
+    let inpVal = search.value
+    if (inpVal.trim() === "") {
+        cardRandom.style.display = "flex"
+        getFullCards("")
+    } else {
+        cardRandom.style.display = 'none'
+        cards.innerHTML = ''
+        data.map((item) => {
+            if (item.name.toLocaleLowerCase().startsWith(inpVal.toLocaleLowerCase())) {
+                cards.innerHTML +=
+                    `<article data-aos="fade-up" class="card-item">
+                    <div class="flag"><img src="${item.flag}" alt="flag"></div>            
+                    <div class="item-texts">
+                        <p>${item.region}</p>
+                        <h3>${item.name}, ${item.capital}</h3>
+                            <div class="end-texts">
+                                <span>Population: ${item.population}</span>
+                                <span>${item.area} km<sup>2</sup></span>
+                            </div>
+                        </div>
+                </article>`
+            }
+        })
+    }
+
+}
+const oneCountry = document.getElementById('oneCountry')
+const title = document.getElementById('titleText')
+const ending = document.getElementById('ending')
+
+function showCountry(id) {
+    title.style.display = 'none'
+    btn.style.display = 'none'
+    oneCountry.style.backgroundColor = 'inherit'
+    back.style.display='block'
+    cards.innerHTML = ''
+    data.forEach((item) => {
+        if (item.id.includes(id)) {
+            cardRandom.innerHTML =
+                `
+            <img src="${item.flag}" alt="flag">
+            <div class="texts">
+            <h1>${item.name}</h1>
+            <p>Region: ${item.region}</p>
+            <h4>Capital: ${item.capital}</h4>
+            <h4>Area: ${item.area} km<sup>2</sup></h4>
+            <h4>Population: ${item.population}</h4>
+            </div>
+    
+        `
+        }
+    })
+}
+const back = document.getElementById('back')
+function backCards(){
+    cardRandom.innerHTML =''
+    title.style.display = 'block'
+    title.style.padding = '50px'
+    btn.style.display = 'inline-block'
+    back.style.display='none'
+    oneCountry.style.backgroundColor = '#e5e7eb'
+    getFullCards("")
+    addRandom()
+}
